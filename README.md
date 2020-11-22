@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Vehicle Detection HOG + SVM :car: :taxi: :police_car:
+=======
+# Vehicle Detection HOG + SVM :car: :red_car: :taxi:
+>>>>>>> 6a9800480f357c2a1f969db441bd508a28506399
 
 This repository contains the implementation and a short overview of my Bachelor Thesis, 'Vehicle Detection Using Front Camera Image Classification'. The original thesis paper is written in Serbian, so this readme file will provide a recap of important points from the thesis. 
 
