@@ -45,4 +45,4 @@ HOG - cell size 10x10            |  Original image | HOG - cell size 15x15
 <img src="images/cars/HOG/10x10/19_new.png" width="700"/> | <img src="images/cars/HOG/19.jpg" width="700"/> | <img src="images/cars/HOG/15x15/19_new.png" width="700"/>
 
 As one could notice from the images above, the smaller the size of a HOG cell, the more information the features can 'carry'. Of course, the con of smaller cells is a longer computation time, but my emphasis was on getting a good enough precision, while the computation time got a bit neglected. \
-The visualization of HOG features was implemented so that each gradient orientation is being mapped to a certain character in the image (/, -, \, |) and, depending on the gradient magnitute, we scale the corresponding character somewhere in the range from 0 to 255. 
+The visualization of HOG features was implemented so that each gradient orientation is being mapped to a certain character in the image (/, -, \\, |) and, depending on the gradient magnitute, we scale the corresponding character somewhere in the range from 0 to 255. 
