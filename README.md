@@ -103,7 +103,7 @@ Now let's cheer up a bit with some positive outcomes!
     </tr> 
 </table>
 
-For the end, here's a 'wide Putin' version of myself:
+In the end, here's a 'wide Putin' version of myself:
 <p align="center">
     <img src="images/cars/detected/52.png" width="600"/>
 </p>
