@@ -48,7 +48,7 @@ As one could notice from the images above, the smaller the size of a HOG cell, t
 The visualization of HOG features was implemented so that each gradient orientation is being mapped to a certain character in the image (/, -, \\, |) and, depending on the gradient magnitude, we scale the corresponding character somewhere in the range from 0 to 255. Here is a little plot representing the orientation -> character mapping (1 : '-', 2 : '/'. 3 : '|', 4 : '\\'):
 
 <p align="center">
-    <img src="images/cars/HOG/HOG_mapping.JPG" width="350"/>
+    <img src="images/cars/HOG/hog_mapping.JPG" width="350"/>
 </p>
 
 
