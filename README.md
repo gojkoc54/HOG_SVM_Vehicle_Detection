@@ -1,6 +1,8 @@
 # Vehicle Detection HOG + SVM :car: :taxi: :police_car:
 
-This repository contains the implementation and a short overview of my Bachelor Thesis, 'Vehicle Detection Using Front Camera Image Classification'. The original thesis paper is written in Serbian, so this readme file will provide a recap of important points from the thesis. 
+This repository contains the implementation and a short overview of my Bachelor Thesis, 'Vehicle Detection Using Front Camera Image Classification'. The original thesis paper is written in Serbian, so this readme file will provide a recap of important points from the thesis. \
+**NOTE**: sorry for the bad code... I recommend you take a look at `feature_extraction.py` and `sliding_window.py` scripts, since they are in a somewhat good shape.
+
 
 ## Table of Content
 * [Pipeline](#Pipeline)
