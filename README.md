@@ -14,7 +14,7 @@ This repository contains the implementation and a short overview of my Bachelor 
 The pipeline is given by the following flowchart:
 
 <p align="center">
-<img src="images/flowcharts/pipeline.png" width="600"/>
+    <img src="images/flowcharts/pipeline.png" width="600"/>
 </p>
 
  The main idea of the first data collection process was to gather enough labeled data for classifier training, meaning that we looked for a lot of labeled images of cars, as well as non-car items (parts of the road, road signs, pedestrians, ...). Following datasets were used:
@@ -28,7 +28,7 @@ On the other hand, the second data collection process had the goal of gathering 
 Histograms of Oriented Gradients are a well-established method for extracting features from images. A high-level overview is given by the flowchart below. 
 
 <p align="center">
-<img src="images/flowcharts/HOG.png" width="700"/>
+    <img src="images/flowcharts/HOG.png" width="700"/>
 </p>
 
 For additional information on HOG features please refer to these resources:
@@ -45,7 +45,11 @@ HOG - cell size 10x10            |  Original image | HOG - cell size 15x15
 <img src="images/cars/HOG/10x10/19_new.png" width="700"/> | <img src="images/cars/HOG/19.jpg" width="700"/> | <img src="images/cars/HOG/15x15/19_new.png" width="700"/>
 
 As one could notice from the images above, the smaller the size of a HOG cell, the more information the features can 'carry'. Of course, the con of smaller cells is a longer computation time, but my emphasis was on getting a good enough precision, while the computation time got a bit neglected. \
-The visualization of HOG features was implemented so that each gradient orientation is being mapped to a certain character in the image (/, -, \\, |) and, depending on the gradient magnitute, we scale the corresponding character somewhere in the range from 0 to 255. 
+The visualization of HOG features was implemented so that each gradient orientation is being mapped to a certain character in the image (/, -, \\, |) and, depending on the gradient magnitude, we scale the corresponding character somewhere in the range from 0 to 255. Here is a little plot representing the orientation -> character mapping (1 : '-', 2 : '/'. 3 : '|', 4 : '\\'):
+
+<p align="center">
+    <img src="images/cars/HOG/HOG_mapping.JPG" width="350"/>
+</p>
 
 
 ## SVM classifiers
