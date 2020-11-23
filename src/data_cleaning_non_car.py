@@ -118,7 +118,7 @@ def crop_images(path_to_images, new_path, size):
 
 
 
-def rezise_images(path_to_images, new_path_to_images, new_shape, extension):
+def resize_images(path_to_images, new_path_to_images, new_shape, extension):
 
     my_path = os.path.abspath(os.path.dirname(__file__))
     path_to_images = os.path.join(my_path, path_to_images)
@@ -137,17 +137,3 @@ def rezise_images(path_to_images, new_path_to_images, new_shape, extension):
         current_image.save(new_path)
 
         i += 1
-
-
-
-
-if __name__ == '__main__':
-
-    # crop_images(path_to_images = "../belgium_dataset/images",
-    #             new_path = "../belgium_dataset/cropped",
-    #             size = (256, 256))
-
-    rezise_images(path_to_images = "../new_images/car/iva/final/2",
-                  new_path_to_images = "../new_images/car/iva/final/2/2048_1024",
-                  new_shape = (2048, 1024),
-                  extension = ".png")

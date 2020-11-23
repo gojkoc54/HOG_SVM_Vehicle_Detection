@@ -298,39 +298,8 @@ def extract_HoG_features(range, cell_shape, path_to_folder, dest_path, features_
 
 if __name__ == '__main__':
 
-    # extract_HoG_features(range=(0, 9000), cell_shape=(10, 10),
-    #                      path_to_folder = "../dataset/data/cropped/",
-    #                      dest_path = "../dataset/data/HoG/",
-    #                      save_images=(1000, 1010), save_features=1)
-
     extract_HoG_features(range=(4000, 6000), cell_shape=(8, 8),
                          path_to_folder = "../dataset/data/cropped/bad/FSRS",
                          dest_path = "../dataset/data/HoG/",
                          save_images=(1, 10), save_features=1,
                          features_path = "../dataset/data/features/bad/FSRS")
-
-
-
-    # SPAJANJE NOVIH OBELEZJA
-    # my_path = os.path.abspath(os.path.dirname(__file__))
-
-    # features_path = "../dataset/data/features/bad/FR/HoG_features_1_4000.obj"
-    # filepath = os.path.join(my_path, features_path)
-
-    # file = open(filepath, 'rb')
-    # vector_1 = pickle.load(file)
-    # file.close()
-
-    # features_path = "../dataset/data/features/bad/FR/HoG_features_4000_6000.obj"
-    # filepath = os.path.join(my_path, features_path)
-
-    # file = open(filepath, 'rb')
-    # vector_2 = pickle.load(file)
-    # vector_2 = vector_2[1 : , :]
-    # file.close()
-
-    # both = np.append(vector_1, vector_2, axis = 0)
-
-    # filepath = "../dataset/data/features/bad/FR/HoG_features_1_6000.obj"
-    # filehandler = open(filepath, 'wb')
-    # pickle.dump(both, filehandler)

@@ -171,7 +171,6 @@ def cleaning_with_bounding_boxes(path_to_names, path_to_labels, path_to_images, 
 
         current_image = Image.open(full_image_path, 'r')
 
-        # EXTRACT BOUNDING BOX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         cropped = extract_boounding_box(np.asarray(current_image), start, end, non_car = True)
         current_image = Image.fromarray(cropped)
 
@@ -191,41 +190,3 @@ def cleaning_with_bounding_boxes(path_to_names, path_to_labels, path_to_images, 
 
     names_file.close()
     return [i, count_fr, count_s, count_fsrs]
-
-
-
-def rename_replace_all():
-
-    size_FR = (256, 256)
-    size_S = (256, 128)
-    size_FSRS = (256, 128)
-    # size = None
-
-    end_i = cleaning_with_bounding_boxes(path_to_names="../dataset/data/other/train_test_split/classification/test.txt",
-                          path_to_labels="../dataset/data/other/label/",
-                          path_to_images="../dataset/data/other/image/",
-                          new_path="../dataset/data/cropped/bad/",
-                          i_start=[0, 0, 0, 4680],
-                          resize_shape_FR=size_FR,
-                          resize_shape_S=size_S,
-                          resize_shape_FSRS=size_FSRS)
-
-
-    cleaning_with_bounding_boxes(path_to_names="../dataset/data/other/train_test_split/classification/train.txt",
-                          path_to_labels="../dataset/data/other/label/",
-                          path_to_images="../dataset/data/other/image/",
-                          new_path="../dataset/data/cropped/",
-                          i_start=end_i,
-                          resize_shape_FR=size_FR,
-                          resize_shape_S=size_S,
-                          resize_shape_FSRS=size_FSRS)
-
-
-
-
-if __name__ == '__main__':
-
-
-    rename_replace_all()
-
-

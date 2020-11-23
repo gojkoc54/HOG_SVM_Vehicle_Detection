@@ -58,10 +58,6 @@ def classify_window(window):
         decisions.append(decision)
 
     if sum(predictions) > 0:
-
-        # window_image.save(my_path + "/../new_images/car/iva/final/4096_2048/nadjene/" + str(tren) + ".png")
-        # tren += 1
-
         return [1, max(decisions)]
     else:
         return [0, 0]
@@ -188,10 +184,7 @@ def find_cars(image_name, image_shape, window_sizes, found_name, folder_path, h_
                             
                             i_new += 20
 
-                        # MNOGO BITNO !!! 
-                        # uglavnom je 4
-                        # thresh = 1
-
+                        thresh = 4
                         if classified > thresh:
                             max_decision.append(curr_max)
                             max_i.append(curr_i)
@@ -211,26 +204,3 @@ def find_cars(image_name, image_shape, window_sizes, found_name, folder_path, h_
                 final_image.save(my_path + '/' + folder_path + '/nadjene/' + found_name)
 
         print(image_name + " : " + str(max_decision))
-
-
-
-
-if __name__ == '__main__':
-
-    # for i in range(1950, 1980):
-    #     name = str(i) + ".png"
-    #     find_cars(name, (890, 1300), [(350, 450)], name, "../new_images/car/iva/final/2/frames/cropped")
-
-    # for i in [104, 109, 113, 114, 115, 116]:
-        
-    #     frame = i - 90
-
-    #     window_height = int(1.2 * frame + 75)
-    #     window_width = int(2 * frame + 110)
-        
-    #     name = "image-" + str(i).zfill(4) + ".pgm"
-    #     find_cars(name, (720, 1280), [(window_height, window_width)], name, "../benchmark/FOTO+VIDEO/cmrs-png", w_lim = 440, h_lim = 310, thresh = 3)
-    
-    find_cars("50.png", (1440, 1920), [(360, 460), (220, 590)], "50.png", "../new_images/car/jovica/frames/GH010457", w_lim = 1920, h_lim = 1440, thresh = 4)
-
-    a = 1
