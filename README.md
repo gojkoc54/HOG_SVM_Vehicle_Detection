@@ -85,7 +85,7 @@ Here are some final results of my project! Of course, the model failed miserably
 <table> 
     <tr>
         <td> <img src="images/cars/bad/12.png" width="700"/> </td>
-        <td> <img src="images/cars/bad/12.png" width="700"/> </td>
+        <td> <img src="images/cars/bad/19_bad.png" width="700"/> </td>
     </tr> 
     <tr>
         <td> <img src="images/cars/bad/Capture.JPG" width="700"/> </td>
